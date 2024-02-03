@@ -5,10 +5,24 @@ import { GalleriaModule } from 'primeng/galleria';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './views/home/home.component';
+import { AboutUsComponent } from './views/about-us/about-us.component';
+import { ProductsServicesComponent } from './views/products-services/products-services.component';
+import { BlogNewsComponent } from './views/blog-news/blog-news.component';
+import { ContactComponent } from './views/contact/contact.component';
+import { PromotionsComponent } from './views/promotions/promotions.component';
+import { PoliciesComponent } from './views/policies/policies.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    AboutUsComponent,
+    ProductsServicesComponent,
+    BlogNewsComponent,
+    ContactComponent,
+    PromotionsComponent,
+    PoliciesComponent
   ],
   imports: [
     BrowserModule,
