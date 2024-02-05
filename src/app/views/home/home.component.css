@@ -1,0 +1,76 @@
+.fondo{
+  height: 500px;
+  margin: 0;
+  background: radial-gradient(ellipse at bottom, #3e4246 0%, #000000 100%);
+  overflow: hidden;
+}
+
+#title {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+  color: #FFF;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 50px;
+  letter-spacing: 10px;
+  margin-top: -60px;
+  padding-left: 10px;
+}
+
+#title span {
+  background: -webkit-linear-gradient(white, #002b55);
+  -webkit-background-clip: text;
+  background-clip: text; /* Propiedad estándar para mejorar la compatibilidad */
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+.particle {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 50%;
+  animation: particleAnimation 2s linear infinite;
+}
+
+.particle2 {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  animation: particleAnimation 2s linear infinite;
+}
+
+.particle3 {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  animation: particleAnimation 2s linear infinite;
+}
+
+@keyframes particleAnimation {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+}
+
+.particle {
+  animation: particleAnimation 10s ease infinite; /* Ajusta la duración (3s) y la función de temporización (ease) según sea necesario */
+}
+
+.particle3 {
+  animation: particleAnimation 15s ease infinite; /* Ajusta la duración (3s) y la función de temporización (ease) según sea necesario */
+}
