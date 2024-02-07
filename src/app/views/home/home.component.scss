@@ -1,0 +1,160 @@
+.fondo{
+  position: relative;
+  height: 400px;
+  margin: 0;
+  overflow: hidden;
+  // background-size: cover;
+  // background-image: url("../../../assets/img/Espacio.jpg");
+  /*background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);*/
+ }
+
+ .fondo::before, .fondo::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.fondo::before {
+  background-image: url("../../../assets/img/Espacio.jpg"); /* Ruta de la primera imagen */
+  background-size: cover;
+  z-index: 0; /* Ajusta según sea necesario */
+}
+
+.fondo::after {
+  background-image: url("../../../assets/img/Planeta.png"); /* Ruta de la segunda imagen */
+  background-size: cover;
+  z-index: 2; /* Ajusta según sea necesario */
+  animation: animarFondo 2.5s linear infinite; /* Define la animación y sus propiedades */
+
+}
+
+@keyframes animarFondo {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(-0.041%); } /* Modifica la transformación según el tipo de animación que desees */
+  100% { transform: translateX(0%); } 
+}
+
+#title {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+  color: #FFF;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  letter-spacing: 10px;
+  margin-top: -60px;
+  padding-left: 10px;
+  animation: fadeIn 5s ease-in-out; /* Aplica la animación de desvanecimiento */
+  z-index: 3; 
+}
+
+#title span {
+  background: -webkit-linear-gradient(rgb(249, 255, 249), #00e01a);
+  /* background: -webkit-linear-gradient(white, #002b55); */
+  -webkit-background-clip: text;
+  background-clip: text; 
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+h1,h2,h3,h4,h5,h6, p {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  align-items: center; /* Centra verticalmente los elementos en el header */
+  z-index: 3; 
+}
+
+#logo {
+  margin-right: 5px; /* Agrega un margen derecho para separar el logo del menú */
+  z-index: 3; 
+}
+
+.logImage{
+  margin-top: 10px;
+  margin-left: 10px;
+  z-index: 3; 
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-right: 15px; /* Ajusta el espacio entre los elementos del menú */
+  z-index: 3; 
+}
+
+nav a {
+  text-decoration: none; 
+  color: white; 
+  font-family: 'Lato', sans-serif;
+}
+
+.seccion {
+  width: 80%;
+  margin: 0 auto; /* Centra horizontalmente la sección */
+  padding: 20px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  margin-top: 20px; /* Espacio entre secciones */
+}
+
+.footer {
+  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.rotlink{
+  color: white;
+  text-decoration: none; /* Elimina el subrayado */
+}
+
+$particle-size: 2px;
+$particle-color: #ffffff;
+
+@mixin particle-animation($duration) {
+  animation: particleAnimation $duration ease infinite;
+}
+
+@keyframes particleAnimation {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+}
+
+@for $i from 1 through 100 {
+  $random-duration: random() * 40s; // Duración aleatoria entre 20s y 50s
+  .particle#{$i} {
+    position: absolute;
+    width: $particle-size;
+    height: $particle-size;
+    background-color: $particle-color;
+    border-radius: 50%;
+    @include particle-animation($random-duration);
+  }
+}
