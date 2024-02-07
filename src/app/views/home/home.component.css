@@ -1,10 +1,13 @@
 .fondo{
-  height: 500px;
+  padding: 20px;
+  height: 400px;
   margin: 0;
-  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+  background-image: url("../../../assets/img/Espacio.jpg");
+  /*background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);*/
   overflow: hidden;
   position: relative;
-}
+  background-size: cover;
+ }
 
 #title {
   position: absolute;
@@ -15,17 +18,77 @@
   text-align: center;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
-  font-size: 50px;
+  font-size: 40px;
   letter-spacing: 10px;
   margin-top: -60px;
   padding-left: 10px;
+  z-index: 2; 
 }
 
 #title span {
-  background: -webkit-linear-gradient(white, #002b55);
+  background: -webkit-linear-gradient(rgb(249, 255, 249), #00e01a);
+  /* background: -webkit-linear-gradient(white, #002b55); */
   -webkit-background-clip: text;
   background-clip: text; 
   -webkit-text-fill-color: transparent;
+}
+
+h1,h2,h3,h4,h5,h6, p {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  align-items: center; /* Centra verticalmente los elementos en el header */
+}
+
+#logo {
+  margin-right: 5px; /* Agrega un margen derecho para separar el logo del menú */
+}
+
+.logImage{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-right: 15px; /* Ajusta el espacio entre los elementos del menú */
+}
+
+nav a {
+  text-decoration: none; 
+  color: white; 
+  font-family: 'Lato', sans-serif;
+}
+
+.seccion {
+  width: 80%;
+  margin: 0 auto; /* Centra horizontalmente la sección */
+  padding: 20px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  margin-top: 20px; /* Espacio entre secciones */
+}
+
+.footer {
+  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.rotlink{
+  color: white;
+  text-decoration: none; /* Elimina el subrayado */
 }
 
 .particle1   {position: absolute; width: 2px;  height: 2px;  background-color: #ffffff;  border-radius: 50%;  }
