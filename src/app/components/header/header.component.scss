@@ -1,0 +1,43 @@
+
+  
+  header {
+    display: flex;
+    align-items: center; 
+    z-index: 3; 
+  }
+  
+  #logo {
+    margin-right: 5px; 
+    z-index: 3; 
+  }
+  
+  .logImage{
+    height: 80px; 
+    width: 80px;
+    margin-left: 39%;
+    margin-top: 10px;
+    margin-left: 10px;
+    z-index: 3; 
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav li {
+    margin-right: 15px; 
+    z-index: 3; 
+  }
+  
+  nav a {
+    text-decoration: none; 
+    color: white; 
+    font-family: 'Lato', sans-serif;    
+    font-size: large;
+  }
+  
+  .rotlink{
+    color: white;
+    text-decoration: none; 
+  }

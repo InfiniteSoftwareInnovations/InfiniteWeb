@@ -3,26 +3,24 @@
     height: 800px;
     margin: 0;
     overflow: hidden;
-    // background-size: cover;
     background-image: url("../../../assets/img/FondoEspacial.png");
-    /*background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);*/
    } 
 
   
   @keyframes animarFondo {
     0% { transform: translateX(0); }
-    50% { transform: translateX(-0.065%); } /* Modifica la transformación según el tipo de animación que desees */
+    50% { transform: translateX(-0.065%); } 
     100% { transform: translateX(0%); } 
   }
 
   header {
     display: flex;
-    align-items: center; /* Centra verticalmente los elementos en el header */
+    align-items: center; 
     z-index: 3; 
   }
   
   #logo {
-    margin-right: 5px; /* Agrega un margen derecho para separar el logo del menú */
+    margin-right: 5px; 
     z-index: 3; 
   }
   
@@ -41,7 +39,7 @@
   }
   
   nav li {
-    margin-right: 15px; /* Ajusta el espacio entre los elementos del menú */
+    margin-right: 15px; 
     z-index: 3; 
   }
   
@@ -53,7 +51,7 @@
   
   .rotlink{
     color: white;
-    text-decoration: none; /* Elimina el subrayado */
+    text-decoration: none; 
   }
   
   $particle-size: 2px;
@@ -75,7 +73,7 @@
   }
   
   @for $i from 1 through 100 {
-    $random-duration: random() * 40s; // Duración aleatoria entre 20s y 50s
+    $random-duration: random() * 40s; 
     .particle#{$i} {
       position: absolute;
       width: $particle-size;
@@ -85,3 +83,11 @@
       @include particle-animation($random-duration);
     }
   }
+
+p{
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 25px;
+  margin-left: 20%;
+  margin-right: 20%;
+}

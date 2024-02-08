@@ -12,7 +12,9 @@ import { BlogNewsComponent } from './views/blog-news/blog-news.component';
 import { ContactComponent } from './views/contact/contact.component';
 import { PromotionsComponent } from './views/promotions/promotions.component';
 import { PoliciesComponent } from './views/policies/policies.component';
-import { CardModule } from 'primeng/card';  
+import { CardModule } from 'primeng/card';
+import { HeaderComponent } from './components/header/header.component';
+import { ParticulasComponent } from './components/particulas/particulas.component';  
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { CardModule } from 'primeng/card';
     BlogNewsComponent,
     ContactComponent,
     PromotionsComponent,
-    PoliciesComponent
+    PoliciesComponent,
+    HeaderComponent,
+    ParticulasComponent
   ],
   imports: [
     BrowserModule,

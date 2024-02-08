@@ -3,9 +3,6 @@
   height: 400px;
   margin: 0;
   overflow: hidden;
-  // background-size: cover;
-  // background-image: url("../../../assets/img/Espacio.jpg");
-  /*background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);*/
  }
 
  .fondo::before, .fondo::after {
@@ -18,22 +15,22 @@
 }
 
 .fondo::before {
-  background-image: url("../../../assets/img/Espacio.jpg"); /* Ruta de la primera imagen */
+  background-image: url("../../../assets/img/Espacio.jpg"); 
   background-size: cover;
-  z-index: 0; /* Ajusta según sea necesario */
+  z-index: 0; 
 }
 
 .fondo::after {
-  background-image: url("../../../assets/img/Planeta.png"); /* Ruta de la segunda imagen */
+  background-image: url("../../../assets/img/Planeta.png"); 
   background-size: cover;
-  z-index: 2; /* Ajusta según sea necesario */
-  animation: animarFondo 2.5s linear infinite; /* Define la animación y sus propiedades */
+  z-index: 2; 
+  animation: animarFondo 2.5s linear infinite; 
 
 }
 
 @keyframes animarFondo {
   0% { transform: translateX(0); }
-  50% { transform: translateX(-0.065%); } /* Modifica la transformación según el tipo de animación que desees */
+  50% { transform: translateX(-0.065%); } 
   100% { transform: translateX(0%); } 
 }
 
@@ -50,13 +47,12 @@
   letter-spacing: 10px;
   margin-top: -60px;
   padding-left: 10px;
-  animation: fadeIn 5s ease-in-out; /* Aplica la animación de desvanecimiento */
+  animation: fadeIn 5s ease-in-out; 
   z-index: 3; 
 }
 
 #title span {
   background: -webkit-linear-gradient(rgb(249, 255, 249), #00e01a);
-  /* background: -webkit-linear-gradient(white, #002b55); */
   -webkit-background-clip: text;
   background-clip: text; 
   -webkit-text-fill-color: transparent;
@@ -76,7 +72,7 @@
   font-family: 'Lato', sans-serif;
   font-size: 25px;
   letter-spacing: 5px;
-  animation: fadeInbienvenida 5s ease-in-out; /* Aplica la animación de desvanecimiento */
+  animation: fadeInbienvenida 5s ease-in-out; 
   z-index: 3; 
 }
 
@@ -98,12 +94,12 @@ h1,h2,h3,h4,h5,h6, p {
 
 header {
   display: flex;
-  align-items: center; /* Centra verticalmente los elementos en el header */
+  align-items: center; 
   z-index: 3; 
 }
 
 #logo {
-  margin-right: 5px; /* Agrega un margen derecho para separar el logo del menú */
+  margin-right: 5px; 
   z-index: 3; 
 }
 
@@ -122,7 +118,7 @@ nav ul {
 }
 
 nav li {
-  margin-right: 15px; /* Ajusta el espacio entre los elementos del menú */
+  margin-right: 15px; 
   z-index: 3; 
 }
 
@@ -134,7 +130,7 @@ nav a {
 
 .rotlink{
   color: white;
-  text-decoration: none; /* Elimina el subrayado */
+  text-decoration: none; 
 }
 
 $particle-size: 2px;
@@ -156,7 +152,7 @@ $particle-color: #ffffff;
 }
 
 @for $i from 1 through 100 {
-  $random-duration: random() * 40s; // Duración aleatoria entre 20s y 50s
+  $random-duration: random() * 40s; 
   .particle#{$i} {
     position: absolute;
     width: $particle-size;
@@ -169,11 +165,11 @@ $particle-color: #ffffff;
 
 .seccion {
   width: 80%;
-  margin: 0 auto; /* Centra horizontalmente la sección */
+  margin: 0 auto; 
   padding: 20px;
   background-color: #ffffff;
   color: rgb(0, 0, 0);
-  margin-top: 20px; /* Espacio entre secciones */
+  margin-top: 20px; 
 }
 
 .descripcion {
