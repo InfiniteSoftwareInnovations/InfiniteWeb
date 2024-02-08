@@ -14,7 +14,10 @@ import { PromotionsComponent } from './views/promotions/promotions.component';
 import { PoliciesComponent } from './views/policies/policies.component';
 import { CardModule } from 'primeng/card';
 import { HeaderComponent } from './components/header/header.component';
-import { ParticulasComponent } from './components/particulas/particulas.component';  
+import { ParticulasComponent } from './components/particulas/particulas.component';
+import { FondoComponent } from './components/fondo/fondo.component';  
+import { GRID_EVENTS } from 'grid';
+
 
 @NgModule({
   declarations: [
@@ -27,7 +30,8 @@ import { ParticulasComponent } from './components/particulas/particulas.componen
     PromotionsComponent,
     PoliciesComponent,
     HeaderComponent,
-    ParticulasComponent
+    ParticulasComponent,
+    FondoComponent
   ],
   imports: [
     BrowserModule,

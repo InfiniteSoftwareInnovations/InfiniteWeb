@@ -1,38 +1,42 @@
-.fondo{
+.fondo {
   position: relative;
-  height: 800px;
   margin: 0;
   overflow: hidden;
-  // background-size: cover;
   background-image: url("../../../assets/img/FondoEspacial.png");
-  /*background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);*/
- } 
-
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 @keyframes animarFondo {
-  0% { transform: translateX(0); }
-  50% { transform: translateX(-0.065%); } /* Modifica la transformación según el tipo de animación que desees */
-  100% { transform: translateX(0%); } 
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-0.065%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }
 
 header {
   display: flex;
-  align-items: center; /* Centra verticalmente los elementos en el header */
-  z-index: 3; 
+  align-items: center;
+  z-index: 3;
 }
 
 #logo {
-  margin-right: 5px; /* Agrega un margen derecho para separar el logo del menú */
-  z-index: 3; 
+  margin-right: 5px;
+  z-index: 3;
 }
 
-.logImage{
-  height: 80px; 
+.logImage {
+  height: 80px;
   width: 80px;
   margin-left: 39%;
   margin-top: 10px;
   margin-left: 10px;
-  z-index: 3; 
+  z-index: 3;
 }
 
 nav ul {
@@ -41,19 +45,19 @@ nav ul {
 }
 
 nav li {
-  margin-right: 15px; /* Ajusta el espacio entre los elementos del menú */
-  z-index: 3; 
+  margin-right: 15px;
+  z-index: 3;
 }
 
 nav a {
-  text-decoration: none; 
-  color: white; 
-  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+  color: white;
+  font-family: "Lato", sans-serif;
 }
 
-.rotlink{
+.rotlink {
   color: white;
-  text-decoration: none; /* Elimina el subrayado */
+  text-decoration: none;
 }
 
 $particle-size: 2px;
@@ -75,7 +79,7 @@ $particle-color: #ffffff;
 }
 
 @for $i from 1 through 100 {
-  $random-duration: random() * 40s; // Duración aleatoria entre 20s y 50s
+  $random-duration: random() * 40s;
   .particle#{$i} {
     position: absolute;
     width: $particle-size;
@@ -84,4 +88,13 @@ $particle-color: #ffffff;
     border-radius: 50%;
     @include particle-animation($random-duration);
   }
+}
+
+p,
+h2 {
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
 }

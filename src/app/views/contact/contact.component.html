@@ -1,9 +1,55 @@
 <div class="fondo">
   <app-header></app-header>
 
-  <div id="title">
-    <span>INFINITI SOFTWARE INNOVATIONS</span>
-  </div>
-
   <app-particulas></app-particulas>
+
+  <section class="contacto">
+    <div class="seccion">
+      <h2>Contacto</h2>
+      <p>Estamos aquí para ayudarte. Si tienes alguna pregunta, sugerencia o simplemente quieres decir hola, no dudes en ponerte en contacto con nosotros.</p>
+      <div class="informacion-contacto">
+        <div class="info">
+          <i class="pi pi-map-marker"></i>
+          <h3>Dirección</h3>
+          <p>123 Calle Principal, Ciudad, País</p>
+        </div>
+        <div class="info">
+          <i class="pi pi-phone"></i>
+          <h3>Teléfono</h3>
+          <p>+123 456 789</p>
+        </div>
+        <div class="info">
+          <i class="pi pi-envelope"></i>
+          <h3>Correo Electrónico</h3>
+          <p>infinitesoftwareinnovations@gmail.com</p>
+        </div>
+      </div>
+      <div class="mapa">
+        <h3>Ubicación</h3>
+        <!-- Integra el mapa de Google Maps -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.9814641239427!2d-0.1276157858479815!3d51.50732181003696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604ce66a9ec1b%3A0x38428abbfe652e15!2sBig+Ben!5e0!3m2!1sen!2suk!4v1559491537223!5m2!1sen!2suk" width="100%" height="450" style="border:0;" allowfullscreen=""></iframe>
+      </div>
+      <div class="formulario-map-container">
+        <div class="formulario-contacto">
+          <h3>Envíanos un Mensaje</h3>
+          <form>
+            <div class="grupo">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="grupo">
+              <label for="email">Correo Electrónico</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="grupo">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            </div>
+            <button type="submit">Enviar Mensaje</button>
+          </form>
+        </div>
+        
+      </div>
+    </div>
+  </section>
 </div>
