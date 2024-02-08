@@ -33,7 +33,7 @@
 
 @keyframes animarFondo {
   0% { transform: translateX(0); }
-  50% { transform: translateX(-0.041%); } /* Modifica la transformación según el tipo de animación que desees */
+  50% { transform: translateX(-0.065%); } /* Modifica la transformación según el tipo de animación que desees */
   100% { transform: translateX(0%); } 
 }
 
@@ -67,9 +67,33 @@
   100% { opacity: 1; }
 }
 
+#bienvenida {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: 5%;
+  color: #FFF;
+  font-family: 'Lato', sans-serif;
+  font-size: 25px;
+  letter-spacing: 5px;
+  animation: fadeInbienvenida 5s ease-in-out; /* Aplica la animación de desvanecimiento */
+  z-index: 3; 
+}
+
+#bienvenida span {
+  background: -webkit-linear-gradient(rgb(255, 255, 255), #555555);
+  -webkit-background-clip: text;
+  background-clip: text; 
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes fadeInbienvenida {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 h1,h2,h3,h4,h5,h6, p {
   font-family: 'Lato', sans-serif;
-  text-align: center;
 }
 
 header {
@@ -84,6 +108,9 @@ header {
 }
 
 .logImage{
+  height: 80px; 
+  width: 80px;
+  margin-left: 39%;
   margin-top: 10px;
   margin-left: 10px;
   z-index: 3; 
@@ -103,25 +130,6 @@ nav a {
   text-decoration: none; 
   color: white; 
   font-family: 'Lato', sans-serif;
-}
-
-.seccion {
-  width: 80%;
-  margin: 0 auto; /* Centra horizontalmente la sección */
-  padding: 20px;
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
-  margin-top: 20px; /* Espacio entre secciones */
-}
-
-.footer {
-  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
-  color: white;
-  padding: 20px;
-  text-align: center;
-  bottom: 0;
-  left: 0;
-  width: 100%;
 }
 
 .rotlink{
@@ -156,5 +164,104 @@ $particle-color: #ffffff;
     background-color: $particle-color;
     border-radius: 50%;
     @include particle-animation($random-duration);
+  }
+}
+
+.seccion {
+  width: 80%;
+  margin: 0 auto; /* Centra horizontalmente la sección */
+  padding: 20px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  margin-top: 20px; /* Espacio entre secciones */
+}
+
+.descripcion {
+  display: flex;
+  align-items: center;
+}
+
+.descripcion p {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.descripcion img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.banerSectionImges{
+  height: 200px;
+  width: 200px;
+}
+
+.contenido {
+  display: flex;
+}
+
+.texto {
+  flex: 1; /* Ocupa todo el espacio disponible en el contenedor */
+  z-index: 1; /* Coloca el texto encima de la imagen */
+}
+
+.imagen {
+  z-index: 0; /* Coloca la imagen debajo del texto */
+}
+
+.footer {
+  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  .cta-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+
+    button {
+      margin: 0 10px;
+      border-radius: 25px; /* Redondear los bordes */
+      font-size: 16px;
+      padding: 10px 20px;
+      border: none;
+      transition: background-color 0.3s;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    button:hover {
+      filter: brightness(0.9); /* Reducir el brillo al pasar el ratón */
+    }
+
+    .p-button-success {
+      background: linear-gradient(to right, #00416a, #00d4ff); /* Degradado de azul oscuro a azul claro */
+    }
+
+    .p-button-info {
+      background: linear-gradient(to right, #00416a, #8200ff); /* Degradado de azul oscuro a fucsia */
+    }
+
+    .p-button-warning {
+      background: linear-gradient(to right, #ff00a0, #ffae00); /* Degradado de fucsia a amarillo */
+    }
+  }
+
+  .links {
+    margin-top: 30px;
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
   }
 }

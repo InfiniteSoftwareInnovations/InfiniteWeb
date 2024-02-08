@@ -12,6 +12,7 @@ import { BlogNewsComponent } from './views/blog-news/blog-news.component';
 import { ContactComponent } from './views/contact/contact.component';
 import { PromotionsComponent } from './views/promotions/promotions.component';
 import { PoliciesComponent } from './views/policies/policies.component';
+import { CardModule } from 'primeng/card';  
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { PoliciesComponent } from './views/policies/policies.component';
     BrowserModule,
     AppRoutingModule,
     ButtonModule,
-    GalleriaModule
+    GalleriaModule,
+    CardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
