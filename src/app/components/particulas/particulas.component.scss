@@ -1,11 +1,8 @@
- 
   $particle-size: 2px;
-  $particle-color: #ffffff;
-  
+  $particle-color: #ffffff;  
   @mixin particle-animation($duration) {
     animation: particleAnimation $duration ease infinite;
-  }
-  
+  }  
   @keyframes particleAnimation {
     0% {
       transform: translateY(0);
@@ -15,8 +12,7 @@
       transform: translateY(-100vh);
       opacity: 0;
     }
-  }
-  
+  }  
   @for $i from 1 through 100 {
     $random-duration: random() * 40s; 
     .particle#{$i} {
@@ -28,4 +24,3 @@
       @include particle-animation($random-duration);
     }
   }
-  

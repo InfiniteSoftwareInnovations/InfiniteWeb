@@ -17,6 +17,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { ParticulasComponent } from './components/particulas/particulas.component';
 import { FondoComponent } from './components/fondo/fondo.component';  
 import { GRID_EVENTS } from 'grid';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { GRID_EVENTS } from 'grid';
     PoliciesComponent,
     HeaderComponent,
     ParticulasComponent,
-    FondoComponent
+    FondoComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

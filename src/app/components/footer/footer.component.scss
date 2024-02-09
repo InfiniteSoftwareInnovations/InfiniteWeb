@@ -1,0 +1,57 @@
+
+.footer {
+    background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  
+    .cta-buttons {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+  
+      button {
+        margin: 0 10px;
+        border-radius: 25px; /* Redondear los bordes */
+        font-size: 16px;
+        padding: 10px 20px;
+        border: none;
+        transition: background-color 0.3s;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+  
+      button:hover {
+        filter: brightness(0.9); 
+      }
+  
+      .p-button-success {
+        background: linear-gradient(to right, #00416a, #00d4ff); 
+      }
+  
+      .p-button-info {
+        background: linear-gradient(to right, #00416a, #8200ff); 
+      }
+  
+      .p-button-warning {
+        background: linear-gradient(to right, #ff00a0, #ffae00); 
+      }
+    }
+  
+    .links {
+      margin-top: 30px;
+  
+      p {
+        margin-bottom: 10px;
+      }
+  
+      a {
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+      }
+    }
+  }
+  
