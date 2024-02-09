@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss','./home.componentfondo.scss','./home.componenttitle.scss']
+  styleUrls: ['./home.component.scss','./home.component-fondo.scss','./home.component-title.scss','./home.component-tarjetas-animacion.scss']
 })
 export class HomeComponent {
   particles: { left: number, top: number }[] = [];
