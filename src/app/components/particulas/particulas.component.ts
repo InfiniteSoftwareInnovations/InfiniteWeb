@@ -14,7 +14,6 @@ export class ParticulasComponent {
 
   generarParticulas() {
     for (let i = 1; i <= 100; i++) {
-      console.log("e");
       const left = Math.floor(Math.random() * 100) + 1; // Generar un número aleatorio entre 1 y 100 para left
       const top = Math.floor(Math.random() * 100) + 1; // Generar un número aleatorio entre 1 y 100 para top
       this.particles.push({ left, top });

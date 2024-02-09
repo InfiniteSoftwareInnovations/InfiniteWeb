@@ -15,9 +15,10 @@ import { PoliciesComponent } from './views/policies/policies.component';
 import { CardModule } from 'primeng/card';
 import { HeaderComponent } from './components/header/header.component';
 import { ParticulasComponent } from './components/particulas/particulas.component';
-import { FondoComponent } from './components/fondo/fondo.component';  
-import { GRID_EVENTS } from 'grid';
+import { DialogModule } from 'primeng/dialog'
 import { FooterComponent } from './components/footer/footer.component';
+import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform-browser/animations';
+
 
 
 @NgModule({
@@ -32,7 +33,6 @@ import { FooterComponent } from './components/footer/footer.component';
     PoliciesComponent,
     HeaderComponent,
     ParticulasComponent,
-    FondoComponent,
     FooterComponent
   ],
   imports: [
@@ -40,7 +40,10 @@ import { FooterComponent } from './components/footer/footer.component';
     AppRoutingModule,
     ButtonModule,
     GalleriaModule,
-    CardModule
+    CardModule,
+    DialogModule,
+    BrowserAnimationsModule,
+    NoopAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
